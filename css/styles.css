@@ -1,0 +1,648 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: #ebebebe0;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    list-style: none;
+}
+
+.nav-bar a{
+    color: #ebebeb;
+    text-decoration: none;
+    padding: .625rem .5rem;
+
+}
+.nav-bar .activo a{
+    background-color: rgba(128, 128, 128, 0.614);
+    border-radius: .3125rem;
+}
+
+.nav-bar a:hover{
+    background-color: gray;
+    border-radius: .3125rem;
+}
+body {
+    background-color: #0b0d1f;
+    /* background-color: rgba(0, 0, 0, 0.927); */
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+.titulo-inicio {
+    text-align: center;
+    margin-top: .9375rem;
+    margin-bottom: .9375rem;
+    font-size: 2rem;
+    color: #ebebebcc;
+    font-weight: bold;
+}
+
+.galeria-inicio {
+    display: flex;
+    width: 43.75rem;
+    height: 26.875rem;
+    margin: auto;
+}
+
+.galeria-inicio img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+
+}
+
+.galeria-inicio img:hover {
+    width: 18.75rem;
+    opacity: 1;
+    filter: contrast(1);
+    border-radius: 0px;
+}
+
+.galeria-inicio img:first-child {
+    border-radius: .625rem 0 0 .625rem;
+}
+
+.galeria-inicio img:last-child {
+    border-radius: 0 .625rem .625rem 0;
+}
+
+h2{
+    margin-top: .9375rem;
+    margin-bottom: .9375rem;
+    text-align: center;
+    color: #ebebebc8;
+}
+
+.grid-inicio {
+    display: grid;
+    width: 80%;
+    height: 37.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        " img1 img1 parrafo1 parrafo1"
+        " img1 img1 parrafo1 parrafo1"
+        " img2 img2 parrafo2 parrafo2"
+        " img2 img2 parrafo2 parrafo2"
+    ;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+
+}
+
+.img1 {
+    grid-area: img1;
+    justify-self: center;
+    align-self: center;
+}
+
+.img2 {
+    grid-area: img2;
+    justify-self: center;
+    align-self: center;
+}
+
+.parrafo-grid-1 {
+    justify-self: center;
+    align-self: center;
+    grid-area: parrafo1;
+    font-size: 1.125rem;
+    color:#ebebeb ;
+    text-indent: .4375rem;
+}
+
+.parrafo-grid-2 {
+    justify-self: center;
+    align-self: center;
+    grid-area: parrafo2;
+    font-size: 1.125rem;
+    color: #ebebeb;
+    text-indent: .4375rem;
+}
+.grid-inicio img{
+    width: 15.625rem;
+    border-radius: .3125rem;
+}
+
+.grid-seleccion{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1.875rem repeat(3,1fr);
+    grid-template-areas: 
+    "titulo-grid         .              ."
+    " parrafo-se     parrafo-se      parrafo-se"
+    " img1-seleccion img2-seleccion img3-seleccion"
+    " img1-seleccion img2-seleccion img3-seleccion"
+    ;
+    justify-content: center;
+    margin-bottom: .9375rem;
+}
+.titulo-grid{
+    grid-area: titulo-grid;
+    color: #ebebebc8;
+}
+.parrafo-seleccion{
+    grid-area: parrafo-se;
+    color:#ebebeb
+}
+.img1-seleccion{
+    grid-area: img1-seleccion;
+    align-self: center;
+    justify-self: center;
+
+}
+.grid-seleccion img{
+    border-radius: .625rem;
+    width: 18.75rem;
+}
+.img2-seleccion{
+    grid-area: img2-seleccion;
+    align-self: center;
+    justify-self: center;
+
+}
+.img3-seleccion{
+    grid-area: img3-seleccion;
+    align-self: center;
+    justify-self: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+.section-barcelona{
+    margin: auto;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+.section-barcelona p{
+    color: #ebebeb;
+    text-indent: .3125rem;
+}
+.section-barcelona img{
+    border-radius: .3125rem;
+    width: 18.75rem;
+}
+.section-barcelona div{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.section-barcelona1 {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1.5625rem;
+}
+.div-parrafo{
+    width: 50%;
+}
+.section-barcelona1 img{
+    width: 20.3125rem;
+    border-radius: .3125rem;
+}
+
+.section-barcelona1 p{
+    text-indent: .3125rem;
+    color: #ebebeb;
+}
+
+
+
+
+
+
+@media(max-width: 1024px){
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .section-barcelona div{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    }
+    
+    footer{
+    margin-top: .4375rem;
+    }
+    footer .footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .footer .iconos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .625rem;
+    }
+
+    footer .footer .lista-1{
+    margin-top:  .625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5625rem;
+    }
+}
+
+    @media(max-width: 768px){
+        header {
+            height: 7.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.875rem;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .barcelona-tablet{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.25rem;
+        }
+        .barcelona-tablet img{
+            width: 25rem;
+        }
+        .section-barcelona1{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5625rem;
+            width: 80%;
+        }
+        .section-barcelona1 img{
+            width: 25rem;
+        }
+        .div-parrafo{
+            width: 100%;
+        }
+    
+            
+        footer{
+        margin-top: 5px;
+        }
+        footer .footer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .footer .iconos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .625rem;
+        }
+    
+        footer .footer .lista-1{
+        margin-top:  .625rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.25rem;
+        }
+    
+    
+    }
+
+
+
+
+@media(max-width: 425px){
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12.5rem;
+    }
+    
+    header p {
+        font-size: 1.3rem;
+        font-weight: bolder;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .3125rem;
+    }
+    
+    .nav-bar a{
+        padding: .1875rem;
+    }
+    .nav-bar .activo a{
+        border-radius: .0938rem;
+    }
+    .titulo-inicio{
+        font-size: 1.3rem;
+    }
+
+    .section-barcelona p{
+    text-indent: .125rem;
+    font-size: .75rem;
+    word-spacing: .125rem;
+    }
+    .section-barcelona img{
+    border-radius: .3125rem;
+    width: 12.5rem;
+    }
+    .section-barcelona div{
+    gap: .625rem;
+    }
+
+    .div-parrafo{
+    width: 90%;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .section-barcelona1 img{
+    width: 12.5rem;
+    border-radius: .3125rem;
+    }
+    .texto-mobile{
+        text-indent: .125rem;
+        font-size: .75rem;
+        word-spacing: .125rem;
+    }
+
+
+        
+            
+    footer{
+        margin-top: .1875rem;
+        }
+        footer .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: .625rem;
+        }
+        .footer .iconos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .4375rem;
+        }
+        .footer .iconos img{
+            width: 1.5625rem;
+        }
+    
+        footer .footer .lista-1{
+        margin-top:  .3125rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .625rem;
+        font-size: 0.8rem;
+        }
+
+
+    
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------- */
+.estadisticas-pagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: .625rem;
+}
+
+
+
+
+.estadisticas{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    gap: .3125rem;
+    width: 40%;
+    /* margin:auto; */
+}
+.titulo-estadisticas{
+    font-size: 3rem;
+    color: #ebebebc8;
+    text-align: center;
+    margin: .625rem 0;
+}
+.estadisticas-barcelona{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    /* gap: 1.875rem; */
+    align-items: center;
+}
+.estadisticas li{
+    list-style: none;
+    color: white;
+}
+.estadisticas ul{
+    padding: .625rem;
+}
+.estadisticas ul:hover{
+    background-color: rgba(128, 128, 128, 0.183);
+    border-radius: .3125rem;
+}
+
+.estadisticas .h2-estadisticas:hover{
+    text-decoration: underline;
+}
+
+footer{
+    width: 100%;
+    height: 6.25rem;
+    background-color: rgb(0, 0, 0);
+margin-top: .625rem;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer li{
+    list-style: none;
+}
+.footer .lista-1 li{
+    text-decoration: none;
+    color: #ebebeb;
+}
+.footer .iconos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .625rem;
+}
+.iconos img{
+    width: 1.875rem;
+}
+
+.footer .lista-1{
+    margin-top:  .625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+
+
+
+
+
+.h3-premios{
+    text-align: center;
+    margin: .9375rem;
+    color: #ebebeb;
+}
+
+.section-parrafo{
+    color: #ebebeb;
+    text-indent: 7px;
+    word-spacing: .1875rem;
+    width: 96%;
+    margin: auto;
+}
+
+
+.premios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    gap: 12.5rem;
+    margin-bottom: .9375rem;
+    /* flex-wrap: wrap; */
+}
+
+
+
+.premios p{
+    color: #ebebeb;
+    text-indent: .4375rem;
+    word-spacing: .1875rem;
+}
+.premios img{
+    width: 25rem;
+    border-radius: .3125rem;
+}
+
+
+
+
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.color-input{
+    color: #ebebeb;
+    font-size: 24px;
+}
+
+.tamaño{
+    width: 12.5rem;
+    height: 3.125rem;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.separacion{
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    justify-content: center;
+}
+
+
+.parrafo-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+    text-indent: .4375rem;
+    font-size: 1.5rem;
+    color: #ebebeb;
+    width: 30%;
+}
