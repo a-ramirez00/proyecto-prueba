@@ -265,213 +265,6 @@ h2{
 
 
 
-@media(max-width: 1024px){
-    header {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .section-barcelona div{
-    display: flex;
-    align-items: center;
-    gap: 2.5rem;
-    flex-wrap: wrap;
-    }
-    
-    footer{
-    margin-top: .4375rem;
-    }
-    footer .footer{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    .footer .iconos{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .625rem;
-    }
-
-    footer .footer .lista-1{
-    margin-top:  .625rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.5625rem;
-    }
-}
-
-    @media(max-width: 768px){
-        header {
-            height: 7.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 1.875rem;
-        }
-        .nav-bar{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .barcelona-tablet{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 1.25rem;
-        }
-        .barcelona-tablet img{
-            width: 25rem;
-        }
-        .section-barcelona1{
-            display: flex;
-            flex-direction: column;
-            gap: 1.5625rem;
-            width: 80%;
-        }
-        .section-barcelona1 img{
-            width: 25rem;
-        }
-        .div-parrafo{
-            width: 100%;
-        }
-    
-            
-        footer{
-        margin-top: 5px;
-        }
-        footer .footer{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-        }
-        .footer .iconos{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: .625rem;
-        }
-    
-        footer .footer .lista-1{
-        margin-top:  .625rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1.25rem;
-        }
-    
-    
-    }
-
-
-
-
-
-@media(max-width: 468px){
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 12.5rem;
-    }
-    
-    header p {
-        font-size: 1.3rem;
-        font-weight: bolder;
-    }
-    .nav-bar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: .3125rem;
-    }
-    
-    .nav-bar a{
-        padding: .1875rem;
-    }
-    .nav-bar .activo a{
-        border-radius: .0938rem;
-    }
-    .titulo-inicio{
-        font-size: 1.3rem;
-    }
-
-    .section-barcelona p{
-    text-indent: .125rem;
-    font-size: .75rem;
-    word-spacing: .125rem;
-    }
-    .section-barcelona img{
-    border-radius: .3125rem;
-    width: 12.5rem;
-    }
-    .section-barcelona div{
-    gap: .625rem;
-    }
-
-    .div-parrafo{
-    width: 90%;
-    }
-    h2{
-        font-size: 16px;
-    }
-    .section-barcelona1 img{
-    width: 12.5rem;
-    border-radius: .3125rem;
-    }
-    .texto-mobile{
-        text-indent: .125rem;
-        font-size: .75rem;
-        word-spacing: .125rem;
-    }
-
-
-        
-            
-    footer{
-        margin-top: .1875rem;
-        }
-        footer .footer{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: .625rem;
-        }
-        .footer .iconos{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: .4375rem;
-        }
-        .footer .iconos img{
-            width: 1.5625rem;
-        }
-    
-        footer .footer .lista-1{
-        margin-top:  .3125rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: .625rem;
-        font-size: 0.8rem;
-        }
-
-
-    
-}
-
-
 
 /* --------------------------------------------------------------------------------------------------- */
 .estadisticas-pagina{
@@ -646,4 +439,264 @@ margin-top: .625rem;
     font-size: 1.5rem;
     color: #ebebeb;
     width: 30%;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 1024px){
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .section-barcelona div{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    }
+    
+    footer{
+    margin-top: .4375rem;
+    }
+    footer .footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .footer .iconos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .625rem;
+    }
+
+    footer .footer .lista-1{
+    margin-top:  .625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5625rem;
+    }
+
+
+    .estadisticas-pagina{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+    @media(max-width: 768px){
+        header {
+            height: 7.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.875rem;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .barcelona-tablet{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.25rem;
+        }
+        .barcelona-tablet img{
+            width: 25rem;
+        }
+        .section-barcelona1{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5625rem;
+            width: 80%;
+        }
+        .section-barcelona1 img{
+            width: 25rem;
+        }
+        .div-parrafo{
+            width: 100%;
+        }
+    
+            
+        footer{
+        margin-top: 5px;
+        }
+        footer .footer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .footer .iconos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .625rem;
+        }
+    
+        footer .footer .lista-1{
+        margin-top:  .625rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.25rem;
+        }
+
+    
+        .estadisticas-pagina{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        
+        
+        
+        .estadisticas{
+            width: 60%;
+        }
+
+        .estadisticas ul{
+            padding: .4375rem;
+        }
+    }
+
+
+
+
+
+@media(max-width: 468px){
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12.5rem;
+    }
+    
+    header p {
+        font-size: 1.3rem;
+        font-weight: bolder;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .3125rem;
+    }
+    
+    .nav-bar a{
+        padding: .1875rem;
+    }
+    .nav-bar .activo a{
+        border-radius: .0938rem;
+    }
+    .titulo-inicio{
+        font-size: 1.3rem;
+    }
+
+    .section-barcelona p{
+    text-indent: .125rem;
+    font-size: .75rem;
+    word-spacing: .125rem;
+    }
+    .section-barcelona img{
+    border-radius: .3125rem;
+    width: 12.5rem;
+    }
+    .section-barcelona div{
+    gap: .625rem;
+    }
+
+    .div-parrafo{
+    width: 90%;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .section-barcelona1 img{
+    width: 12.5rem;
+    border-radius: .3125rem;
+    }
+    .texto-mobile{
+        text-indent: .125rem;
+        font-size: .75rem;
+        word-spacing: .125rem;
+    }
+
+
+        
+            
+    footer{
+        margin-top: .1875rem;
+        }
+        footer .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+        }
+        .footer .iconos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .4375rem;
+        }
+        .footer .iconos img{
+            width: 1.5625rem;
+        }
+    
+        footer .footer .lista-1{
+        margin-top:  .3125rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .625rem;
+        font-size: 0.8rem;
+        }
+
+
+    
+        .estadisticas-pagina{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        
+        
+        
+        .estadisticas{
+            width: 70%;
+        }
+
+        .estadisticas ul{
+            padding: .3125rem;
+        }
+
+    
 }
